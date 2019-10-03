@@ -11,13 +11,15 @@
     "@types/express": "^4.17.1",
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.11",
+    "@types/supertest": "^2.0.8",
     "jest": "^24.9.0",
+    "supertest": "^4.0.2",
     "ts-node-dev": "^1.0.0-pre.43",
     "typescript": "^3.6.3"
   },
   "scripts": {
-    "test": "jest",
     "build": "tsc",
+    "test": "tsc && jest",
     "dev": "ts-node-dev --respawn  --transpileOnly ./src/app.ts"
   }
 }
