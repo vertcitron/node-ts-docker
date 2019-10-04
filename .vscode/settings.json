@@ -19,6 +19,9 @@
   "[typescriptreact]": {
     "editor.formatOnSave": false
   },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
     "javascript",

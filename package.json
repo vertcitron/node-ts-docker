@@ -28,7 +28,7 @@
     "build": "tsc",
     "test": "tsc && jest",
     "dev": "ts-node-dev --respawn  --transpileOnly ./src/app.ts",
-    "up:dev": "docker-compose -f docker-compose.dev.yaml up -d --force-recreate",
-    "down:dev": "docker-compose -f docker-compose.dev.yaml down"
+    "up": "docker-compose up -d --force-recreate",
+    "down": "docker-compose down"
   }
 }
