@@ -2,7 +2,7 @@
   "name": "node-ts-docker",
   "version": "0.1.0",
   "description": "A node.js with typescript boilerplate",
-  "main": "dist/app.js",
+  "main": "dist/src/app.js",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -31,6 +31,7 @@
     "test": "tsc && jest",
     "dev": "ts-node-dev --respawn  --transpileOnly ./src/app.ts",
     "up": "docker-compose up -d --force-recreate",
-    "down": "docker-compose down"
+    "down": "docker-compose down",
+    "start": "tsc && node ./dist/app.js"
   }
 }

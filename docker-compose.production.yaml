@@ -12,12 +12,9 @@ services:
 
   node-ts:
     image: node:10.16
-    volumes:
-      - ./:/app
+    build: .
     restart: always
-    working_dir: /app
     ports:
-      - 3000:3000
+      - "3000:3000"
     labels:
       - "traefik.http.routers.node-ts.rule=Host(`node-ts.localhost`)"
-    command: yarn dev
