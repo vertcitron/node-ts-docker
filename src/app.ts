@@ -1,8 +1,8 @@
-import { server } from './server'
+import { ApolloServer } from 'apollo-server'
 
-const port = 3000
+import resolvers from './resolvers'
+import typeDefs from './schemas'
 
-server.listen(port, () => {
-  console.clear()
-  console.log(`Now listening on http://localhost:${port}`)
-})
+const server = new ApolloServer({ resolvers, typeDefs })
+
+server.listen().then(({ url }) => console.log(`Server ready at ${url}.`))
